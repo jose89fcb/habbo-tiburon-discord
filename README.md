@@ -1,4 +1,5 @@
 Comando slash:
+<br>
 <img src="https://i.imgur.com/v7iyMEr.png">
 
 <img src="https://i.imgur.com/5aP06jj.png">
