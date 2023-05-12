@@ -194,7 +194,7 @@ async def _tiburon(ctx:SlashContext, keko:str, hotel:str):
         img1.save(image_binary, 'PNG')
         image_binary.seek(0)
 
-        await ctx.send(f"            `{keko}`", file=discord.File(fp=image_binary, filename='keko.png'))
+        await ctx.send(f"`{keko}`", file=discord.File(fp=image_binary, filename='keko.png'))
     except UnboundLocalError:
        url=":("
          
