@@ -38,7 +38,7 @@ async def tiburon(ctx,  *, keko):
     
     url = "https://www.habbo.com/habbo-imaging/avatarimage?size=l&figure="+ habbo +"&action=none&direction=4&head_direction=4&gesture=std&size=m"
     img1 = Image.open(io.BytesIO(requests.get(url).content))
-    img1 = img1.resize((64,110), Image.Resampling.LANCZOS)#tamaño del keko 1
+    img1 = img1.resize((64,110), Image.ANTIALIAS)#tamaño del keko 1
     
     
     
@@ -66,7 +66,7 @@ async def tiburon(ctx,  *, keko):
     ###
     
     tiburon = Image.open(r"imagenes/tiburon.png").convert("RGBA") #imagen de la trozo
-    img1 = tiburon.resize((145,136), Image.Resampling.LANCZOS)#tamaño de tiburon
+    img1 = tiburon.resize((145,136), Image.ANTIALIAS)#tamaño de tiburon
 
  
     img1.paste(img2,(22,5), mask = img2) #Posicion del keko 
