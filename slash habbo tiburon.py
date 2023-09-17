@@ -81,6 +81,9 @@ slash = SlashCommand(bot, sync_commands=True)
 
 
 async def _tiburon(ctx:SlashContext, keko:str, hotel:str):
+    if ctx.guild is None:
+        await ctx.send("Lo siento, este comando no puede ejecutarse en mensajes privados.")
+        return
     
     
     
