@@ -87,6 +87,7 @@ async def _tiburon(ctx:SlashContext, keko:str, hotel:str):
     if ctx.guild is None:
         await ctx.send("Lo siento, este comando no puede ejecutarse en mensajes privados.")
         return
+     ## Este código evitara ejecutar el bot en mensaje privado ##
 #Este código lo puedes quitar si gustas
  ####
     
